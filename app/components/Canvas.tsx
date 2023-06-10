@@ -43,7 +43,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
 
       if (ctx) {
         // Fill the canvas with a white background
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "gray";
         ctx.fillRect(0, 0, props.width, props.height);
       }
     }
@@ -80,7 +80,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
       <VStack spacing={2} w="full" maxW="lg">
         <ImageResults images={images} />
         <Button onClick={clearCanvas} colorScheme="blue" w={"full"}>
-          Try Again
+          Generate New
         </Button>
       </VStack>
     );
@@ -129,7 +129,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
               Submit
             </Button>
             {!isLoading && !isPolling && (
-              <Button onClick={clearCanvas}>Clear</Button>
+              <Button onClick={clearCanvas}>Reset</Button>
             )}
           </Flex>
         </Stack>
