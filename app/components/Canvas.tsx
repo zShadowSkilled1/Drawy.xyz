@@ -43,7 +43,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
 
       if (ctx) {
         // Fill the canvas with a white background
-        ctx.fillStyle = "gray";
+        ctx.fillStyle = "white";
         ctx.fillRect(0, 0, props.width, props.height);
       }
     }
