@@ -20,8 +20,7 @@ export default function Home() {
         <VStack align="center" py={8} gap={4}>
           <Heading size={"lg"}>Draw It</Heading>
           <Text textAlign={"center"}>
-            Draw something and our AI will generate an image based on your
-            sketch.
+            Draw something...
           </Text>
           <Canvas width={500} height={500} apiUrl={apiUrl} />
         </VStack>
@@ -44,7 +43,7 @@ export default function Home() {
             md: "row",
           }}
         >
-          <Heading size={"xs"}>{`Built using Leap's Remix API `}</Heading>
+          <Heading size={"xs"}>{`Powered by Leap API `}</Heading>
           <Button
             leftIcon={<FaGithub />}
             size={"sm"}
@@ -52,7 +51,7 @@ export default function Home() {
             href="https://github.com/leap-api/draw-it"
             target="_blank"
           >
-            Fork on GitHub
+            Original Creator
           </Button>
         </HStack>
       </VStack>
